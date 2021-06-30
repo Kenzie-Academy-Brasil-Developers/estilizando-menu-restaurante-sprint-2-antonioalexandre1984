@@ -30,7 +30,7 @@ h1 {
 dt {
   height: 25px;
   font-family: "lato";
-  font-size: 20px;
+  font-size: 16px;
   color: var(--preto);
   font-weight: bolder;
 }
@@ -54,6 +54,7 @@ h2 {
 .details {
   font-family: "Lato";
   color: var(--preto);
+  font-size: 16px;
 }
 
 /* Draw a 2px dashed rosybrown border around the address/footer */
@@ -87,12 +88,16 @@ nav {
   padding: 20px;
   border-style:solid;
   border-color: var(--preto);
+  border-width: 2px;
+  
 }
 
 #desserts{
   padding: 20px;
   border-style:solid;
   border-color: var(--preto);
+  border-width: 2px;  
+  
 }
   
 section {
