@@ -1,28 +1,101 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Supermercado+One');
+* {
+  --laranja_avermelhado: #5d4037;
+  --laranja_avermelhado2: #6d4c41;
+  --tijolo:#b22222 ;
+  --preto:#010101;
+  --rosybrown:#bc8f8f;
 
-/* Use the 'Lato' font family at 18px throughout the body of the document, and cover the background with the 'map-bg.jpg' image. */
-nav {font-family: sans-serif; font-size: 10px;}
+}
 
-#main {width: 900px; margin: 10px auto;}
-/* Use the 'Supermercado One' font at 45px (colored #5d4037) for the restaurant name. */
-AAAAAAA
-/* Set the separator between the columns (the "column-rule") to be 2px dashed rosybrown. */
-#menu {columns: 400px 2; column-gap: 100px;}
-section {margin-bottom: 50px;}
+body {
+  font-family: 'Lato';
+  font-size: 18px;
+  margin: 0%;
+  background-image: url("img/map-bg.jpg");
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-attachment:fixed;
 
-/* Show each of the section headings of the menu (e.g. "Starters") in small caps, colored #6d4c41. */
-h2 {margin: 0;}
+}
 
-/* Make the name of each menu item appear in bold in a 20px size. */
+.style1{
+  width: auto;
+  height: auto;
+align-items:center ;
+}
 
+h1{
+  align-items: initial;
+  font-size: 45px;
+  height: 50px;
+  font-family: "Supermercado One";
+  color: var(--laranja_avermelhado);
+}
 
-
-dd {margin: 0 0 12px 0; display: flex;}
-
-.details {order: 1;}
+dt{
+  height: 25px;
+  font-family: 'lato';
+  font-size: 20px;
+  color:var(--preto);
+  font-weight: bolder;
+}
 
 /* Show the price of each item in a large font, in the color named 'firebrick' */
-.price {order: 2; padding-left: 10px;}
+.price{
+  font-size: 20px;
+  color:var(--tijolo);
+  font-weight: bolder;
+  order: 2;
+  padding-left: 10px;
+}
+
+/* Show each of the section headings of the menu (e.g. "Starters") in small caps, colored #6d4c41. */
+h2{
+  text-transform: uppercase;
+  margin: 0;
+  font-family: 'Lato';
+  color:var(--laranja_avermelhado2);
+}
+details{
+  font-family: 'Lato';
+  color:var(--preto);
+}
 
 /* Draw a 2px dashed rosybrown border around the address/footer */
-address {padding: 10px;}
+footer{
+  padding: 2px;
+  border-style:dashed;
+  border-color: var(--rosybrown);
+}
+
+/* Use the 'Supermercado One' font at 45px (colored #5d4037) for the restaurant name. */
+#main {
+  width: 900px;
+  margin: 10px auto;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato|Supermercado+One");
+
+/* Use the 'Lato' font family at 18px throughout the body of the document, and cover the background with the 'map-bg.jpg' image. */
+nav {
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+/* Set the separator between the columns (the "column-rule") to be 2px dashed rosybrown. */
+#menu {
+  columns: 400px 2;
+  column-gap: 100px;
+}
+section {
+  margin-bottom: 50px;
+}
+
+dd {
+  margin: 0 0 12px 0;
+  display: flex;
+}
+
+.details {
+  order: 1;
+}
